@@ -27,7 +27,7 @@ body {
     color: hsl(0, 0%, 81%);
 }
 
-#light-bg {
+.light-bg {
     color: hsl(217, 19%, 35%);
 }
 
@@ -51,7 +51,7 @@ body {
     font-size: 0.95rem;
 }
 
-#light-bg .grad {
+.light-bg .grad {
     color: hsla(217, 19%, 35%, 0.5);
 }
 
@@ -66,7 +66,7 @@ body {
     font-size: 0.95rem;
 }
 
-#light-bg .sub-p {
+.light-bg .sub-p {
     color: hsla(217, 19%, 35%, 0.7);
 }
 
