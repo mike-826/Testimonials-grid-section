@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.33rem;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+    margin: 4%;
+}
+
+.row {
+    display: flex;
+}
+
+.card {
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    padding: 2rem;
+    padding-top: 1.3rem;
+    padding-right: 3rem;
+    color: hsl(0, 0%, 81%);
+}
+
+#light-bg {
+    color: hsl(217, 19%, 35%);
+}
+
+.profile {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.profile img {
+    border-radius: 50%;
+    border: 2px solid hsla(210, 46%, 95%, 0.5);
+    height: 40px;
+}
+
+.profile-text {
+    margin-left: 1rem;
+}
+
+.grad {
+    color : hsla(0, 0%, 81%, 0.5);
+    font-size: 0.95rem;
+}
+
+#light-bg .grad {
+    color: hsla(217, 19%, 35%, 0.5);
+}
+
+.main-p {
+    font-weight: 600;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.sub-p {
+    color: hsla(0, 0%, 81%, 0.7);
+    font-size: 0.95rem;
+}
+
+#light-bg .sub-p {
+    color: hsla(217, 19%, 35%, 0.7);
+}
+
+.quotation-mark {
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+
+.card-1 {
+    background-color: hsl(263, 55%, 52%);
+    margin-top: 5rem;
+    position: relative;
+}
+
+.card-2 {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.card-3 {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.card-4 img {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+.card-4 {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.card-5 {
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+@media(min-width: 700px) {
+
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container {
+        margin: 3%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0fr;
+        gap: 1.5rem;
+        grid-template-areas: "card1 card1 card3"
+                             "card2 card4 card4"
+                             "card5 card5 card5";
+    }
+
+    .card {
+        margin: 0;
+    }
+    
+    .card-1 {
+        grid-area: card1;
+    }
+
+    .card-2 {
+        grid-area: card2;
+    }
+
+    .card-3 {
+        grid-area: card3;
+    }
+
+    .card-4 {
+        grid-area: card4;
+    }
+
+    .card-5 {
+        grid-area: card5;
+    }
+
+}
+
+
+@media(min-width: 1150px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "card1 card1 card2 card5"
+                             "card3 card4 card4 card5";
+
+}
